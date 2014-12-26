@@ -1,0 +1,21 @@
+<div data-role="page" data-motocol-archetype="Page" id="get-ride-archetype" data-theme="c">
+<?php include 'partials/templates/header-1.html';?>
+<?php include 'partials/templates/navpanel.html';?>
+    <div data-role="content" data-theme="c" data-motocol-schema="rchetype_elixi.ride_partners">
+        <ul data-role="listview" data-theme="d">
+            <li data-icon="false" data-motocol-item=".repeat:true;">
+                <a href="#ride-detail" data-motocol-itemkey="item:ride_partner_id" data-motocol-key="ride_partner_id">
+                    <img src="css/images/ajax-loader.gif" style="background-color:#8000e2;" data-motocol-itemkey=".src:icon"/>
+                    <h3 data-motocol-itemkey=".textarea:name"></h3>
+<!--
+                    <p>
+                        <span class="ui-li-count">Avg <br />10%</span>
+                        More Info and App
+                    </p>
+-->
+                    <p data-motocol-itemkey=".textarea:tagline"></p>
+                </a>
+            </li>
+        </ul>
+    </div><!-- /content -->
+</div><!-- /page -->

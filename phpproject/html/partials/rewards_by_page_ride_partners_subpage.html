@@ -1,0 +1,25 @@
+<div data-role="page" id="rewards_by_page_ride_partners_subpage-archetype" data-motocol-archetype="Page">
+    <span data-motocol-schema="rchetype_elixi.rules" data-motocol-key="{merchant_id,condition_type,effect_type}" data-motocol-params="item:'{',the_merchant_id,',1,1}'">
+        <table class="table-stroke" data-motocol-refresh="create">
+            <thead>
+            <tr>
+                <th data-priority="1">S</th>
+                <th data-priority="2">M</th>
+                <th data-priority="3">T</th>
+                <th data-priority="4">W</th>
+                <th data-priority="5">T</th>
+                <th data-priority="6">F</th>
+                <th data-priority="7">S</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-motocol-item=".repeat:true">
+                    <span data-motocol-itemkey=".textarea:effect_amount,'%';.data-point-day:condition_other"></span>
+                </td>
+                <span data-motocol-item=".textarea:'<script>setTimeout(elixiApp.sortDayPoints,1000)</script>'"></span>
+            </tr>
+            </tbody>
+        </table>
+	</span>
+</div>

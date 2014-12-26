@@ -1,0 +1,22 @@
+<div data-role="page" data-theme="c" id="redeem-1-archetype" data-motocol-archetype="Page">
+    <div data-role="header" data-theme="a">
+        <h1>Redeem Balance</h1>
+    </div>
+    <div data-role="content" data-theme="c" id="user_rides_to_redeem_list" data-motocol-schema="rchetype_elixi.user_rides" data-motocol-item="0" data-motocol-key="is_redeemed">
+        <div align="center">
+            <h3 data-motocol-userscope=".textarea:'$',ride_balance;"></h3>
+        </div>
+        <ul data-role="listview" data-inset="true" data-theme="c" data-mini="true">
+            <li data-icon="back" data-motocol-item=".repeat:true">
+                <a class="ride-item-not-redeemed" data-motocol-itemkey=".href:'#redeem-2'; item:user_ride_id; key:'user_ride_id'" href="" data-rel="dialog">
+                    <h3 class="ride-dl-amount" data-motocol-itemkey=".textarea:'$',ride_amount"></h3>
+                    <p data-motocol-itemkey=".textarea:ride_date; .printfmt:date;"></p>
+                    <p data-motocol-enum=".schema:rchetype_elixi.ride_partners; .enumkey:ride_partner_id; .textarea:ride_partner_name;"
+                       data-motocol-itemkey=" enum-filter:ride_partner_id">
+                    </p>
+                </a>
+            </li>
+        </ul>
+        <a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="b">Done</a>
+    </div>
+</div><!-- /page -->

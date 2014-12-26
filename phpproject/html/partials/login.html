@@ -1,0 +1,66 @@
+<div data-role="page" id="login-archetype" data-theme="c" data-motocol-archetype="Page" data-motocol-login="page">
+    <div data-role="content">
+        <div align="center">
+            <a href="#register">
+                <img src="img/elixi-white-tagline.png" style="width: 30em; max-width:100%;"/>
+            </a>
+        </div>
+        <div data-motocol-schema=""></div>
+        <div data-motocol-schema="Service"></div>
+        <form data-motocol-login="form" data-motocol-formaction="genparams">
+            <label style="color:red;" data-motocol-error="">
+                <h1 style="color:red;" data-motocol-error="errorcode"></h1>
+                <div style="color:red;" data-motocol-error="errortext"></div>
+                <div style="color:red;" data-motocol-error="errorinfo"></div>
+                <div style="color:red;" data-motocol-error="errortype"></div>
+            </label>
+            <div class="ui-grid-a ui-responsive">
+                <div class="ui-block-a">
+                    <label for="user" class="ui-hidden-accessible">Username:</label>
+                    <div style='margin:5px; position:relative'>
+                        <input data-theme="a" type="text" id="user" placeholder="Username"
+                               data-motocol-login="user" autocomplete="off" autocapitalize="off" autocorrect="off"
+                               spellcheck="false" />
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <label for="pass" class="ui-hidden-accessible">Password:</label>
+                    <div style='margin:5px; position:relative'>
+                        <input data-theme="a" type="password" id="pass" value="" placeholder="Password"
+                               data-motocol-login="pass" />
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-b ui-responsive">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <a href="#" data-role="button" onclick="$OAUTH._loginProcess();">Sign in</a>
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+        </form>
+        <div class="ui-grid-b ui-responsive">
+            <div class="ui-block-a"></div>
+            <div class="ui-block-b">
+                <div align="center">
+                    <a href="#register">Register</a>
+                    <br/>
+                    <br/>
+                    <a href="#general-information" style="width: 75%; margin: 0 auto;">Learn More</a>
+                </div>
+            </div>
+            <div class="ui-block-c"></div>
+            <div class="ui-block-a"></div>
+            <div class="ui-block-b" style="white-space: nowrap;">
+                <div align="center">
+                    <h3><!--Connect using--></h3>
+                </div>
+            </div>
+            <div class="ui-block-c"></div>
+        </div>
+        <div align="center">
+            <!--<a href="#facebook-api"><img src="img/facebook.png" style="max-width:3em; margin:.25em;"></a>-->
+            <!--<a href="#twitter-api"><img src="img/twitter-logo-large.png" style="max-width:3em; margin:.25em;"></a>-->
+        </div>
+    </div><!-- /content -->
+</div><!-- /page -->

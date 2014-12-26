@@ -1,0 +1,70 @@
+<div data-role="page" data-motocol-archetype="Page" id="register-archetype" data-theme="c">
+<?php include 'partials/templates/header-3.html';?>
+    <div data-role="content" data-theme="c">
+        <h1 class="bigscreen">Register with Elixi</h1>
+        <p>Please complete the following information to create your Elixi profile.</p>
+        <div data-motocol-schema="Service"></div>
+        <form action="#cc-link" data-motocol-formaction="process.genparams.navigate" data-ajax="false" onchange="elixiApp.registration.validateForm(this, false);">
+            <input type="hidden" name="itemloc" value="Service" />
+            <input type="hidden" name="itemtype" value="register" />
+            <input type="hidden" name="querytype" value="create" />
+            <input type="hidden" name="queryhow" value="item" />
+            <input type="hidden" name="ride_balance" value="0.00" />
+            <input type="hidden" name="onFetchDataSuccess" value="elixiApp.registration.onSuccessRegistration"/>
+            <input type="hidden" name="onFetchDataFail" value="elixiApp.registration.onFailRegistration"/>
+            <div data-role="fieldcontain" data-theme="a">
+                <label for="dob" data-theme="a">Date of Birth:<br /><small>You must be over 21 to participate</small></label>
+                <input type="date" name="date_of_birth" id="dob" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="mm/dd/yyyy" data-theme="a">
+            </div>
+            <div class="ui-grid-a ui-responsive">
+                <div class="ui-block-a">
+                    <label for="firstname" class="ui-hidden-accessible" data-theme="a">First Name:</label>
+                    <input type="text" name="first_name" id="firstname" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="First Name" data-theme="a">
+                </div>
+                <div class="ui-block-b">
+                    <label for="lastname" class="ui-hidden-accessible" data-theme="a">Last Name:</label>
+                    <input type="text" name="last_name" id="lastname" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Last Name" data-theme="a">
+                </div>
+            </div>
+            <div class="ui-grid-solo">
+                <div class="ui-block-a">
+                    <label for="username" class="ui-hidden-accessible" data-theme="a">Username:</label>
+                    <input type="text" name="username" id="username" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Username" data-theme="a">
+                </div>
+            </div>
+            <div class="ui-grid-a ui-responsive">
+                <div class="ui-block-a">
+                    <label for="password" class="ui-hidden-accessible" data-theme="a">Password:</label>
+                    <input type="password" name="password" id="password" value="" autocomplete="off" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Password" data-theme="a">
+                </div>
+                <div class="ui-block-b">
+                    <label for="passconf" class="ui-hidden-accessible" data-theme="a">Re-Enter Password:</label>
+                    <input type="password" name="passconf" id="passconf" value="" autocomplete="off" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Re-Enter Password" data-theme="a">
+                </div>
+                <div class="ui-block-a">
+                    <label for="phone" class="ui-hidden-accessible" data-theme="a">Phone Number:</label>
+                    <input type="tel" name="mobile_phone" id="phone" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Phone Number" data-theme="a">
+                </div>
+                <div class="ui-block-b">
+                    <label for="email" class="ui-hidden-accessible" data-theme="a">Email Address:</label>
+                    <input type="email" name="email" id="email" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Email Address" data-theme="a">
+                </div>
+            </div>
+            <div data-role="fieldcontain" class="ui-btn-right">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="tos">&nbsp;</label>
+                    <input type="checkbox" name="tos" id="tos" />
+                </fieldset>
+            </div>
+            <small>
+                I accept the terms and conditions outlined in the <a href="#" data-url="http://rchetype.co/Elixi/dox/terms.html" class="open-in-system-browser">Elixi Terms of Service</a>,
+                the <a href="#" data-url="http://rchetype.co/Elixi/dox/privacy.html" class="open-in-system-browser">Elixi Privacy Policy</a>,
+                our technology partner <a href="#" data-url="https://www.mylinkables.com/termsofservice" class="open-in-system-browser">Linkable Networks' Terms of Service</a>
+                and confirm that the above information is accurate.
+            </small>
+            <div class="ui-btn-right" style="float:right">
+                <a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-mini="true" data-theme="c" onclick="elixiApp.registration.validateForm(this, true)">Continue</a>
+            </div>
+        </form>
+    </div><!-- /content -->
+</div><!-- /page -->

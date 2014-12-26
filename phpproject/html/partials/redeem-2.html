@@ -1,0 +1,22 @@
+<div data-role="page" data-theme="c" id="redeem-2-archetype" data-motocol-archetype="Page">
+    <div data-role="header" data-theme="a">
+        <h1>Confirm</h1>
+    </div>
+    <div data-role="content" data-theme="c"  data-motocol-schema="rchetype_elixi.user_rides" data-motocol-key="user_ride_id"
+         data-motocol-params="item:itemid;">
+        <p>Redeem your balance against this ride?</p>
+
+        <form id="redeem-credit-form" data-motocol-formaction="process" data-ajax="false">
+            <input type="hidden" name="itemloc" value="Service"/>
+            <input type="hidden" name="itemtype" value="redeemcredit"/>
+            <input type="hidden" name="querytype" value="create"/>
+            <input type="hidden" name="queryhow" value="item"/>
+            <input type="hidden" name="onFetchDataSuccess" value="elixiApp.redeemCredit.redeemCreditSuccess"/>
+            <input type="hidden" name="onFetchDataFail" value="elixiApp.redeemCredit.redeemCreditFail"/>
+            <input type="hidden" name="settlement_id" data-motocol-item=".value:settlement_id" value=""/>
+            <input type="hidden" name="ride_amount" data-motocol-item=".value:ride_amount" value=""/>
+            <input type="submit" value="Redeem"/>
+        </form>
+        <a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="b">Cancel</a>
+    </div>
+</div><!-- /page -->

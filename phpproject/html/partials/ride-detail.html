@@ -1,0 +1,32 @@
+<div data-role="page" data-motocol-archetype="Page" id="ride-detail-archetype" data-theme="d" class="jqm-demos">
+<?php include 'partials/templates/header-5.html';?>
+<?php include 'partials/templates/navpanel.html';?>
+    <div data-role="content" data-theme="b"
+         data-motocol-schema="rchetype_elixi.ride_partners" data-motocol-key="ride_partner_id" data-motocol-params="item:itemid">
+        <h1 data-motocol-item=".textarea:name"></h1>
+        <p><strong data-motocol-item=".textarea:tagline"></strong></p>
+        <div align="center">
+            <img src="css/images/ajax-loader.gif" style="max-width:100%;" data-motocol-item=".src:image" />
+        </div>
+        <div align="center">
+            <div data-motocol-subpage="#?subpage=rewards_by_page_ride_partners_subpage"
+                         data-motocol-item="add-params:'the_merchant_id=',merchant_id"></div>
+            <span>Earn 2% more on your first and fifth ride!</span>
+        </div>
+        <div class="ui-grid-c">
+            <div class="ui-block-a">
+                <a class="detail-btn" data-motocol-item=".href:'tel:',dispatch_phone;" href="" data-role="button">
+                    <img src="img/phone-button.png" style="max-width:100%;" />
+                </a>
+                <!--<p><span data-motocol-item=".textarea:ride_partner_address1;"></span><br /><span data-motocol-item=".textarea:ride_partner_address2"></span><br /><span data-motocol-item=".textarea:ride_partner_city,', ',ride_partner_state,' ',ride_partner_zip;"></span></p>
+                <p><a data-motocol-item=".href:'http://',ride_partner_website; .textarea:ride_partner_website" href="" target="blank" data-rel="external" data-ajax="false"></a></p>-->
+            </div>
+            <div class="ui-block-b">
+                <a id="downloadAppButton" style="display:none;" href="#" data-role="button" data-motocol-item=".data-url-android:app_android; .data-url-ios:app_ios;" class="open-in-system-browser"><img src="img/download.png" style="max-width:100%;" /></a>
+            </div>
+            <div class="ui-block-c"></div>
+            <div class="ui-block-d"></div>
+        </div>
+        <div data-motocol-item=".textarea:html"></div>
+    </div><!-- /content -->
+</div><!-- /page -->

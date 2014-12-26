@@ -1,0 +1,29 @@
+<div data-role="page" id="contest-detail" data-theme="c">
+<?php include 'partials/templates/header-1.html';?>
+<?php include 'partials/templates/navpanel.html';?>
+	<div data-role="content" data-theme="c">
+        <ul data-role="listview" data-theme="c" data-divider-theme="e" data-inset="true">
+            <li data-role="list-divider">Description<span class="ui-li-count">Ends 10/31/2014</span></li>
+            <li><h3>Contest Name</h3><p style="white-space:normal;"><strong>Contest description</strong></p><p style="white-space:normal;">Additional details</p></li>
+            <li data-role="list-divider">Sponsor</li>
+            <li><img src="img/stoli.png">
+                <h3 style="white-space:normal">Sponsor Name Goes Here</h3>
+                <p style="white-space:normal">Sponsor description or tagline goes here.</p>
+            </li>
+            <li data-role="list-divider">Leaderboard</li>
+            <li>Adam Kinkaid</li>
+            <li>Alex Wickerham</li>
+            <li>Avery Johnson</li>
+            <li>Bob Cabot</li>
+            <li>Caleb Booth</li>
+            <li>Christopher Adams</li>
+            <li>Culver James</li>
+        </ul>
+        <div data-role="popup" id="popupJoin" class="ui-content" style="max-width:280px" data-theme="c" data-overlay-theme="c">
+            <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+            <p>You have been added to this contest</p>
+            <a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="c">Continue</a>
+        </div>
+        <p>Rules of the contest go here.</p>
+	</div><!-- /content -->
+</div><!-- /page -->

@@ -1,0 +1,32 @@
+<div data-role="page" data-motocol-archetype="Page" id="cc-link-archetype" data-theme="c">
+<?php include 'partials/templates/header-3.html';?>
+    <div data-role="content" data-theme="c">
+        <h1 class="bigscreen">Link your Cards</h1>
+        <p>Link your Elixi profile to your credit card(s) to begin earning rewards right away.</p>
+        <form id="link-card-form" data-motocol-formaction="process" data-ajax="false">
+            <input type="hidden" name="itemloc" value="Service"/>
+            <input type="hidden" name="itemtype" value="initialcardlink"/>
+            <input type="hidden" name="querytype" value="create"/>
+            <input type="hidden" name="queryhow" value="item"/>
+            <input type="hidden" name="onFetchDataSuccess" value="elixiApp.linkCard.linkCardSuccess"/>
+            <input type="hidden" name="onFetchDataFail" value="elixiApp.linkCard.linkCardFail"/>
+            <input type="hidden" name="username" data-motocol-params=".value:email" value=""/>
+            <input type="hidden" name="password" data-motocol-params=".value:password" value=""/>
+            <div class="ui-body ui-body-f ui-corner-all">
+                <div data-role="fieldcontain">
+                    <!--<label for="cardname" data-theme="a">Credit Card Alias <small>(e.g., Wells Fargo VISA)</small>:</label>
+                    <input type="text" name="cardname" id="cardname" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Name your card" data-theme="z">-->
+                    Please click the button below to be directed to our secure partner, Linkable.
+                </div>
+                <input type="submit" value="Link Card"/>
+            </div>
+        </form>
+        <ul data-role="listview" data-inset="true">
+            <li data-role="list-divider" data-theme="e">Linked Cards</li>
+            <li><h3>No Cards Linked at this time</h3><p>Use the form above to link a new card.</p></li>
+        </ul>
+        <div class="right">
+            <a id="cc-link-continue-button" href="#home" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-mini="true" data-theme="a" class="ui-disabled">Continue</a>
+        </div>
+    </div><!-- /content -->
+</div><!-- /page -->

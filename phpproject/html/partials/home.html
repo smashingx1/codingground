@@ -1,0 +1,90 @@
+<div data-role="page" data-motocol-archetype="Page" id="home-archetype" data-theme="c" data-motocol-expire="true">
+<?php include 'partials/templates/header-2.html';?>
+<?php include 'partials/templates/navpanel.html';?>
+	<div data-role="header">
+        <div id="in-the-know">
+            <a href="#" data-role="button" data-inset="true" data-theme="e" style="width:100%;margin-top:0!important; margin-bottom:0!important;"><p>Happy New Year and welcome to Elixi! Thank you for becoming a member. We look forward to providing a great service to you and the community of Denver. Enjoy!</p></a>
+        </div>
+    </div>
+    <div data-role="content">
+        <div data-motocol-schema="rchetype_elixi.merchant_locations"></div>
+        <div data-motocol-schema="rchetype_elixi.user_rides"></div>
+        <div data-motocol-schema="rchetype_elixi.ride_partners"></div>
+        <div data-motocol-schema="rchetype_elixi.rules"></div>
+        <div data-motocol-schema="Service.get_merchant_avg_reward"></div>
+        <div data-motocol-schema="Service.get_ride_partner_avg_reward"></div>
+        <div data-motocol-schema="Service"></div>
+
+        <div data-motocol-userscope="include:is_logged_in">
+            <div data-motocol-include-filter="1">
+                <div align="center">
+                    <a href="#redeem-1" data-role="button" data-inset="true" data-theme="c" data-rel="dialog" style="width:60%;margin-top:0; margin-bottom:0;">
+                        <h3>Redeem</h3>
+                        <!--<li data-icon="false"><a href="#account-information"><span class="display-number-of-rides"></span> Rides</a></li>-->
+                        <h1 data-motocol-userscope=".textarea:'$',ride_balance;"></h1>
+                    </a>
+                </div>
+            </div>
+            <div data-motocol-include-default>
+                <div align="center">
+                    <a href="#login" data-role="button" data-inset="true" data-theme="c" data-rel="dialog" style="width:60%;margin-top:0; margin-bottom:0;">
+                        <h1>Login</h1>
+                        <!--<li data-icon="false"><a href="#account-information"><span class="display-number-of-rides"></span> Rides</a></li>-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <a href="#find-business" data-role="button" data-inset="true" data-theme="c" style="width:90%;">
+                    <h3>Find</h3>
+                    <img src="img/find-business.png" style="max-width:100%;" />
+                </a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#get-ride" data-role="button" data-inset="true" data-theme="c" style="width:90%;">
+                    <h3>Ride</h3>
+                    <img src="img/get-ride.png" style="max-width:100%;" />
+                </a>
+            </div>
+            <div class="ui-block-c">
+                <div data-motocol-userscope="include:is_logged_in">
+                    <div data-motocol-include-filter="1">
+                        <a href="#gamification" data-role="button" data-inset="true" data-theme="c" style="width:90%;">
+                            <h3>Elixiation</h3>
+                            <img src="img/gamification.png" style="max-width:100%;" />
+                        </a>
+                    </div>
+                    <div data-motocol-include-default>
+                        <a href="#" class="coming-soon-button" data-role="button" data-inset="true" data-theme="c" style="width:90%;">
+                            <h3>Elixiation</h3>
+                            <img src="img/gamification.png" style="max-width:100%;" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <a href="#general-information" data-role="button" data-inset="true" data-theme="c" style="width:90%;">
+                    <h3>Info</h3>
+                    <img src="img/general-information.png" style="max-width:100%;"/>
+                </a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#drinks-of-the-month" data-role="button" data-inset="true" data-theme="c" style="width:90%;">
+                    <h3>Drinks</h3>
+                    <img src="img/drink-of-the-month.png" style="max-width:100%;" />
+                </a>
+            </div>
+            <div class="ui-block-c">
+                <a href="#sponsors" data-role="button" data-inset="true" data-theme="c" style="width:90%;">
+                    <h3>Sponsors</h3>
+                    <img src="img/sponsors.png" style="max-width:100%;"/>
+                </a>
+            </div>
+        </div>
+        <p style="display:table;margin:0 auto;font-size:.75em;">Patent&nbsp;Pending</p>
+    </div><!-- /content -->
+</div><!-- /page -->

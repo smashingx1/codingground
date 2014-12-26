@@ -1,0 +1,258 @@
+<div data-role="page" id="profile" data-theme="d" class="jqm-demos">
+<?php include 'partials/templates/header-1.html';?>
+	<div data-role="content" class="jqm-content" data-theme="d">
+        <h1 class="bigscreen">Profile</h1>
+        <p>Completing the following information helps enrich your Elixi experience.</p>
+        <form>
+            <div data-role="fieldcontain" data-theme="z">
+                <label for="dob" data-theme="z">Date of Birth:<br /><small>You must be over 21 to participate</small></label>
+                <input type="date" name="dob" id="dob" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="mm/dd/yyyy" data-theme="z">
+            </div>
+            <div class="ui-grid-a ui-responsive">
+                <div class="ui-block-a">
+                    <label for="firstname" class="ui-hidden-accessible" data-theme="z">First Name:</label>
+                    <input type="text" name="firstname" id="firstname" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="First Name" data-theme="z">
+                </div>
+                <div class="ui-block-b">
+                    <label for="lastname" class="ui-hidden-accessible" data-theme="z">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Last Name" data-theme="z">
+                </div>
+            </div>
+            <div class="ui-grid-solo">
+                <div class="ui-block-a">
+                    <label for="username" class="ui-hidden-accessible" data-theme="z">Username:</label>
+                    <input type="text" name="username" id="username" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Username" data-theme="z">
+                </div>
+            </div>
+            <div class="ui-grid-a ui-responsive">
+                <div class="ui-block-a">
+                    <label for="password" class="ui-hidden-accessible" data-theme="z">Password:</label>
+                    <input type="password" name="password" id="password" value="" autocomplete="off" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Password" data-theme="z">
+                </div>
+                <div class="ui-block-b">
+                    <label for="password2" class="ui-hidden-accessible" data-theme="z">Re-Enter Password:</label>
+                    <input type="password" name="password2" id="password2" value="" autocomplete="off" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Re-Enter Password" data-theme="z">
+                </div>
+                <div class="ui-block-a">
+                    <label for="phone" class="ui-hidden-accessible" data-theme="z">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Phone Number" data-theme="z">
+                </div>
+                <div class="ui-block-b">
+                    <label for="email" class="ui-hidden-accessible" data-theme="z">Email Address:</label>
+                    <input type="email" name="email" id="email" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Email Address" data-theme="z">
+                </div>
+            </div>
+            <div class="ui-grid-a ui-responsive">
+                <div class="ui-block-a" style="padding:5px;">
+                    <div class="ui-body ui-body-f ui-corner-all">
+                    <fieldset data-role="controlgroup">
+                        <legend>Home Address:</legend>
+                            <label for="h_address1" class="ui-hidden-accessible">Address 1:</label>
+                            <input type="text" name="h_address1" id="h_address1" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Address 1" data-theme="z">
+                            <label for="h_address2" class="ui-hidden-accessible">Address 2:</label>
+                            <input type="text" name="h_address2" id="h_address2" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Address 2" data-theme="z">
+                            <label for="h_city" class="ui-hidden-accessible">City:</label>
+                            <input type="text" name="h_city" id="h_city" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="City" data-theme="z">
+                            <label for="h_state" class="ui-hidden-accessible">State:</label>
+                            <input type="text" name="h_state" id="h_state" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="State" data-theme="z">
+                            <label for="h_zip" class="ui-hidden-accessible">Zip Code:</label>
+                            <input type="text" name="h_zip" id="h_zip" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Zip Code" data-theme="z">
+                    </fieldset>
+                    </div>
+                </div>
+                <div class="ui-block-b" style="padding:5px;">
+                    <div class="ui-body ui-body-f ui-corner-all">
+                    <fieldset data-role="controlgroup">
+                        <legend>Work Address:</legend>
+                            <label for="w_address1" class="ui-hidden-accessible">Address 1:</label>
+                            <input type="text" name="w_address1" id="w_address1" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Address 1" data-theme="z">
+                            <label for="w_address2" class="ui-hidden-accessible">Address 2:</label>
+                            <input type="text" name="w_address2" id="w_address2" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Address 2" data-theme="z">
+                            <label for="w_city" class="ui-hidden-accessible">City:</label>
+                            <input type="text" name="w_city" id="w_city" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="City" data-theme="z">
+                            <label for="w_state" class="ui-hidden-accessible">State:</label>
+                            <input type="text" name="w_state" id="w_state" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="State" data-theme="z">
+                            <label for="w_zip" class="ui-hidden-accessible">Zip Code:</label>
+                            <input type="text" name="w_zip" id="w_zip" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Zip Code" data-theme="z">
+                    </fieldset>
+                    </div>
+                </div>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <legend>Preferred method  to contact for contests:</legend>
+                    <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2b" value="off">
+                    <label for="radio-choice-v-2b">Email</label>
+                    <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2c" value="on" checked="checked">
+                    <label for="radio-choice-v-2c">Push Notification</label>
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <legend>Enter into contests:</legend>
+                    <input type="radio" name="radio-choice-w-2" id="radio-choice-w-2a" value="on" checked="checked">
+                    <label for="radio-choice-w-2a">Yes</label>
+                    <input type="radio" name="radio-choice-w-2" id="radio-choice-w-2b" value="off">
+                    <label for="radio-choice-w-2b">No</label>
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <legend>Opt in for:</legend>
+                    <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a">
+                    <label for="checkbox-v-2a">Push Notifications</label>
+                    <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b">
+                    <label for="checkbox-v-2b">Email Specials</label>
+                </fieldset>
+            </div>
+            <div class="ui-grid-c ui-responsive">
+                <div class="ui-block-a" style="padding:0 5px;">
+                <a href="#drinksPopup" data-role="button"  data-rel="popup" data-position-to="window">Drinks</a>
+                </div>
+                <div class="ui-block-b" style="padding:0 5px;">
+                <a href="#barsPopup" data-role="button"  data-rel="popup" data-position-to="window">Bars/Restaurants</a>
+                </div>
+                <div class="ui-block-c" style="padding:0 5px;">
+                <a href="#sportsPopup" data-role="button"  data-rel="popup" data-position-to="window">Sports/Hobbies</a>
+                </div>
+                <div class="ui-block-d" style="padding:0 5px;">
+                <a href="#musicPopup" data-role="button"  data-rel="popup" data-position-to="window">Music</a>
+                </div>
+            </div>
+            <div data-role="popup" id="drinksPopup" data-theme="b" data-overlay-theme="a" class="ui-corner-all" data-dismissible="false" style="max-width:400px;" class="ui-corner-all">
+                <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                <div data-role="header" data-theme="a" class="ui-corner-top">
+                    <h1>Drinks</h1>
+                </div>
+                <div data-role="content" data-theme="b" class="ui-corner-bottom ui-content">
+                    <form>
+                        <div>
+                            <fieldset data-role="controlgroup">
+                                <legend>Choose your favorite drinks:</legend>
+                                <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a">
+                                <label for="checkbox-v-2a">Beer</label>
+                                <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b">
+                                <label for="checkbox-v-2b">Wine</label>
+                                <input type="checkbox" name="checkbox-v-2c" id="checkbox-v-2c">
+                                <label for="checkbox-v-2c">Hard Liquor</label>
+                                <input type="checkbox" name="checkbox-v-2d" id="checkbox-v-2d">
+                                <label for="checkbox-v-2d">None</label>
+                            </fieldset>
+                            <div class="right">
+                                <a href="#" data-role="button" data-inline="true" data-rel="back" data-mini="true">Cancel</a>
+                                <a href="#" data-role="button" data-inline="true" data-rel="back"  data-theme="a" data-mini="true">Save</a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div data-role="popup" id="barsPopup" data-theme="b" data-overlay-theme="a" class="ui-corner-all" data-dismissible="false" style="max-width:400px;" class="ui-corner-all">
+                <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                <div data-role="header" data-theme="a" class="ui-corner-top">
+                    <h1>Bars & Restaurants</h1>
+                </div>
+                <div data-role="content" data-theme="b" class="ui-corner-bottom ui-content">
+                    <form>
+                        <div>
+                            <fieldset data-role="controlgroup">
+                                <legend>Choose your style of bars and restaurants:</legend>
+                                <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a">
+                                <label for="checkbox-v-2a">Dive Bars</label>
+                                <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b">
+                                <label for="checkbox-v-2b">Nightclubs</label>
+                                <input type="checkbox" name="checkbox-v-2c" id="checkbox-v-2c">
+                                <label for="checkbox-v-2c">Sports Bars</label>
+                                <input type="checkbox" name="checkbox-v-2d" id="checkbox-v-2d">
+                                <label for="checkbox-v-2d">Lounge</label>
+                                <input type="checkbox" name="checkbox-v-2e" id="checkbox-v-2e">
+                                <label for="checkbox-v-2e">Fast Food</label>
+                                <input type="checkbox" name="checkbox-v-2f" id="checkbox-v-2f">
+                                <label for="checkbox-v-2f">Casual Dining</label>
+                                <input type="checkbox" name="checkbox-v-2g" id="checkbox-v-2g">
+                                <label for="checkbox-v-2g">Fine Dining</label>
+                                <input type="checkbox" name="checkbox-v-2h" id="checkbox-v-2h">
+                                <label for="checkbox-v-2h">None</label>
+                            </fieldset>
+                            <div class="right">
+                                <a href="#" data-role="button" data-inline="true" data-rel="back" data-mini="true">Cancel</a>
+                                <a href="#" data-role="button" data-inline="true" data-rel="back"  data-theme="a" data-mini="true">Save</a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div data-role="popup" id="sportsPopup" data-theme="b" data-overlay-theme="a" class="ui-corner-all" data-dismissible="false" style="max-width:400px;" class="ui-corner-all">
+                <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                <div data-role="header" data-theme="a" class="ui-corner-top">
+                    <h1>Sports & Hobbies</h1>
+                </div>
+                <div data-role="content" data-theme="b" class="ui-corner-bottom ui-content">
+                    <form>
+                        <div>
+                            <fieldset data-role="controlgroup">
+                                <legend>Choose your favorite sports and hobbies:</legend>
+                                <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a">
+                                <label for="checkbox-v-2a">Baseball</label>
+                                <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b">
+                                <label for="checkbox-v-2b">Football</label>
+                                <input type="checkbox" name="checkbox-v-2c" id="checkbox-v-2c">
+                                <label for="checkbox-v-2c">Hockey</label>
+                                <input type="checkbox" name="checkbox-v-2d" id="checkbox-v-2d">
+                                <label for="checkbox-v-2d">Soccer</label>
+                            </fieldset>
+                            <div class="right">
+                                <a href="#" data-role="button" data-inline="true" data-rel="back" data-mini="true">Cancel</a>
+                                <a href="#" data-role="button" data-inline="true" data-rel="back"  data-theme="a" data-mini="true">Save</a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div data-role="popup" id="musicPopup" data-theme="b" data-overlay-theme="a" class="ui-corner-all" data-dismissible="false" style="max-width:400px;" class="ui-corner-all">
+                <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                <div data-role="header" data-theme="a" class="ui-corner-top">
+                    <h1>Music</h1>
+                </div>
+                <div data-role="content" data-theme="b" class="ui-corner-bottom ui-content">
+                    <form>
+                        <div>
+                            <fieldset data-role="controlgroup">
+                                <legend>Choose your favorite styles of music:</legend>
+                                <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a">
+                                <label for="checkbox-v-2a">Alternative</label>
+                                <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b">
+                                <label for="checkbox-v-2b">Classical</label>
+                                <input type="checkbox" name="checkbox-v-2c" id="checkbox-v-2c">
+                                <label for="checkbox-v-2c">Reggae</label>
+                                <input type="checkbox" name="checkbox-v-2d" id="checkbox-v-2d">
+                                <label for="checkbox-v-2d">Rock</label>
+                            </fieldset>
+                            <div class="right">
+                                <a href="#" data-role="button" data-inline="true" data-rel="back" data-mini="true">Cancel</a>
+                                <a href="#" data-role="button" data-inline="true" data-rel="back"  data-theme="a" data-mini="true">Save</a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="ui-body ui-body-f ui-corner-all">
+                <div data-role="fieldcontain">
+                    <label for="username" data-theme="z">Credit Card Alias <small>(e.g., Wells Fargo VISA)</small>:</label>
+                    <input type="text" name="username" id="username" value="" style="border-radius:0;border-bottom: 1px solid #433266;" placeholder="Name your card" data-theme="z">
+                </div>
+                <a href="#linkable" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-theme="a">Link Card</a>
+            </div>
+        </form>
+        <ul data-role="listview" data-inset="true">
+            <li data-role="list-divider">Linked Cards</li>
+            <li><h3>None</h3><p>Use the form above to link a new card.</p></li>
+        </ul>
+        <div class="right">
+        <a href="#logged-in" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-inline="true" data-mini="true" data-theme="a">Save</a>
+        </div>
+	</div><!-- /content -->
+</div><!-- /page -->

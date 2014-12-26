@@ -1,0 +1,49 @@
+<div data-role="page" data-motocol-archetype="Page" id="find-business-archetype" data-theme="c">
+<?php include 'partials/templates/header-4.html';?>
+<?php include 'partials/templates/navpanel.html';?>
+    <div data-role="content" class="jqm-map" data-motocol-archetype="PrimararyContent"
+         data-motocol-schema="rchetype_elixi.merchant_locations" data-shiny-object-map=".theme:d;.size:browser-120;
+         .address:addr1 city, state zip;.location:lat,long">
+        <ul data-role="listview">
+            <li data-shiny-object-map="list" style="padding-top:0;padding-bottom:0;min-height:80px;">
+                <img src="css/images/ajax-loader.gif" style="background-color:#8000e2;" data-motocol-itemkey=".src:icon" class="centerMe" />
+                <div><a data-shiny-object-map=".onclick:window" href="#"
+                        style="color: black; text-decoration: none;">
+                    <h3 data-motocol-itemkey=".textarea:loc_name"></h3>
+                    <p data-motocol-itemkey=".textarea:addr1"></p>
+                    <p data-motocol-itemkey=".textarea:addr2"></p>
+                    <!--<p data-motocol-itemkey=".textarea:city,', ',state"></p>-->
+                    <!--<p data-motocol-itemkey=".textarea:phone"></p>-->
+                    <!--<p data-shiny-object-map=".textarea:best">Closest, Best Price or Highest-->
+                        <!--Rated</p>-->
+                    <p><strong data-shiny-object-map=".textarea:filter">Mi., $$ or Rating</strong></p>
+
+                    <span class="ui-li-count" data-motocol-itemkey="enum:'.schema:Service.get_merchant_avg_reward;
+                    .enumkey:{merchant_id,location_id}; .textarea:\'Avg\',' ',avg'; enum-filter:'{',merchant_id,',',location_id,'}'"></span>
+
+
+                </a>
+                </div>
+            </li>
+
+
+        </ul>
+        <div data-shiny-object-map="marker" style="height: 150px;width:200px;overflow-x:hidden;">
+            <span data-motocol-itemkey=".textarea:loc_name" class="map-title"></span>
+            <p style="font-size:9px;color:#000;text-shadow:none;"><span
+                    data-motocol-itemkey=".textarea:addr1"></span><span data-motocol-itemkey=".iff:addr2;.textarea:addr2"></span>
+                , <span data-motocol-itemkey=".textarea:city,', ',state,' ',zip"></span></p>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="tel:" data-motocol-itemkey=".href:'tel:+1 ',phone;.textarea:phone"
+                       target="_blank" style="text-decoration:none;"></a>
+                </div>
+                <div class="ui-block-b">
+                    <a id="viewdetailsstore" data-motocol-itemkey=".href:'#f-and-b';item:merchant_location_id" href="#">View Details</a><br>
+                    <a class="takemethere" href="#" data-shiny-object-map=".onclick:direct">Take me there</a>
+                    <!--<a href="#detail" data-motocol-itemkey="key:'{service_id,service_line_id}';item:'{',service_id,',',service_line_id,'}'" style="text-decoration:underline;">Details</a>-->
+                </div>
+            </div>
+        </div>
+    </div><!-- /content -->
+</div><!-- /page -->

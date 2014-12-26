@@ -1,0 +1,35 @@
+<div data-motocol-app="Elixi" data-motocol-action="../../archetype/webservice/archetype-REST.php"
+     data-motocol-startpage="home" data-motocol-method="GET" data-motocol-ajaxtimeout="10000"
+     data-motocol-appconfig="Elixi" data-shiny-object="Map">
+</div>
+<div data-role="page" id="empty" data-motocol-archetype="Page"></div>
+
+<!---------------------------------- Error page ----------------------------------->
+<div data-role="page" id="exception-archetype" data-theme="d" data-motocol-error="page">
+    <div data-role="header" data-theme="f">
+        <h1>Error</h1>
+    </div>
+    <div data-role="content">
+        <h3>An unexpected error has occured</h3>
+
+        <form data-motocol-login="form">
+            <h1 style="color:red;" data-motocol-error="errorcode"></h1>
+
+            <div style="color:red;" data-motocol-error="errortext"></div>
+            <div style="color:red;" data-motocol-error="errorinfo"></div>
+            <div style="color:red;" data-motocol-error="errortype"></div>
+            <!--            <label style="color:red;" id="fail1"></label> -->
+            <a href="#home" data-role="button" data-direction="reverse"
+               data-theme="a">Ok</a>
+        </form>
+    </div>
+    <!-- /content -->
+</div>
+<!-- /page -->
+
+<!-- *************************************************************************************************************** -->
+<!-- *** @rchetype Required Tags
+<!-- *************************************************************************************************************** -->
+<div id="DBUG" data-motocol-tag="DBUG"></div>
+<div id="recmoreid" data-motocol-recstart="0" data-motocol-recperpage="500" data-motocol-recmore-default><p></p></div>
+<!-- end @rchetype - required tags -->
